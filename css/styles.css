@@ -997,3 +997,9 @@ html[data-p=m] body .btn.btn-g,html[data-p=m] body .btn-g,html[data-p=m] body .c
 
 /* ===== v27: carrusel "Toca una" en móvil: sin desplazamiento vertical interno (no se corta al subir/bajar) ===== */
 @media(max-width:759px){.pick{overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x pan-y;padding-top:8px;padding-bottom:76px;margin-bottom:-48px}}
+
+/* ===== v28: capa de pieza ("Toca una") opaca con Plata y sin desplazamiento lateral ===== */
+.uni{background:var(--gf);touch-action:pan-y;overscroll-behavior:none}
+.uni-bg{background:var(--gf)}
+.uni-sc{overflow-x:hidden;touch-action:pan-y;overscroll-behavior:contain}
+html.lock,html.lock body{overflow:hidden;overscroll-behavior:none}
