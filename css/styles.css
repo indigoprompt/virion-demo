@@ -990,3 +990,10 @@ html[data-p=m] body .btn.btn-g,html[data-p=m] body .btn-g,html[data-p=m] body .c
 .pc:hover .stage.ph .pf{transform:scale(1.06)}
 @media (hover:none){.pc:hover .stage.ph .pf{transform:none}}
 @media (prefers-reduced-motion:reduce){.pc:hover .stage.ph .pf{transform:none}}
+
+/* ===== v26: "Toca una" con los cuadros fijos (sin flotar ni arrastrar) ===== */
+.pick .it{animation:none!important;transform:none!important;translate:none!important;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.pick .it img{-webkit-user-drag:none;user-select:none;pointer-events:none}
+
+/* ===== v27: carrusel "Toca una" en móvil: sin desplazamiento vertical interno (no se corta al subir/bajar) ===== */
+@media(max-width:759px){.pick{overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x pan-y;padding-top:8px;padding-bottom:76px;margin-bottom:-48px}}
