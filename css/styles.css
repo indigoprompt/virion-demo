@@ -1003,3 +1003,9 @@ html[data-p=m] body .btn.btn-g,html[data-p=m] body .btn-g,html[data-p=m] body .c
 .uni-bg{background:var(--gf)}
 .uni-sc{overflow-x:hidden;touch-action:pan-y;overscroll-behavior:contain}
 html.lock,html.lock body{overflow:hidden;overscroll-behavior:none}
+
+/* ===== v29: miniaturas de la ficha con las fotos oficiales ===== */
+.thumbs button img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ===== v30: miniaturas visibles también en móvil y ventanas estrechas (los puntos casi no se veían) ===== */
+@media(max-width:899px){.thumbs{display:flex;gap:8px;margin-top:12px;overflow-x:auto;scrollbar-width:none}.thumbs::-webkit-scrollbar{display:none}.thumbs button{flex:0 0 64px;width:64px;height:64px;padding:0;border-radius:12px;overflow:hidden;border:1px solid rgba(var(--or-a),.4);opacity:.7}.thumbs button[aria-current=true]{opacity:1;border-color:var(--bd)}.dots{display:none}}
