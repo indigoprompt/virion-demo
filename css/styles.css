@@ -234,6 +234,7 @@ section{position:relative}
 .chip{min-height:44px;padding:0 18px;border-radius:99px;border:1px solid rgba(var(--or-a),.7);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
 .chip[aria-pressed=true]{background:var(--gf);color:var(--mf);border-color:var(--gf)}
 .crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;padding-top:18px}
+.crumb a{display:inline-block;padding:14px 4px;margin:-14px -4px}
 /* ficha */
 .pp{display:grid;gap:22px;padding-top:12px}
 @media(min-width:900px){.pp{grid-template-columns:1.15fr 1fr;gap:56px;align-items:start}.gal{position:sticky;top:calc(var(--hdr) + 16px)}}
